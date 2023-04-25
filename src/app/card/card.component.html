@@ -7,3 +7,24 @@
     <button (click)="removerUltimo()">Remover último</button>
     <p>clique em um item para remover</p>
 </ul>
+
+
+<div [ngSwitch]="menuType">
+    <div *ngSwitchDefault><!--Escolho uma permissão padrão para renderizar quando não for declarado no card.component-->
+        <ul>
+            <li>editar perfil</li>
+            <li>adicionar cartão</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'admin'">
+            <li>editar perfil</li>
+            <li>adicionar cartão</li>
+            <li>gerenciar usuarios</li>
+    </div>
+    <div *ngSwitchCase="'superUser'">
+            <li>editar perfil</li>
+            <li>adicionar cartão</li>
+            <li>gerenciar usuarios</li>
+            <li>gerenciar admins</li>
+    </div>
+</div>
