@@ -25,7 +25,7 @@ export class CardComponent implements OnInit {
   
 
   adicionar() {
-    this.produtos.push("Cadeira Gamer", "Fone", "notebook")
+    this.produtos.push("notebook")
   }
 
   removerUltimo() {this.produtos.pop()

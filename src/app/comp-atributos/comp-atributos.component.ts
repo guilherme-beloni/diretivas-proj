@@ -9,7 +9,7 @@ export class CompAtributosComponent implements OnInit {
   estilo: string='enable'
   corFundo: string='green'
   corFonte: string='white'
-  item: string = 'Default'
+  item: string = ''
   lista: string [] = []
 
 
@@ -19,6 +19,11 @@ export class CompAtributosComponent implements OnInit {
 
   adicionarLista(){
     this.lista.push(this.item)
+  }
+
+
+  removerLista(index: number){
+    this.lista.splice(index, 1);
   }
 
   trocar(){

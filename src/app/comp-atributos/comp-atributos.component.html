@@ -12,7 +12,7 @@
 <p>{{item}}</p>
 
 <ul>
-    <li *ngFor="let i of lista">{{i}}</li>
+    <li *ngFor="let i of lista; let idx = index" (click)="removerLista(idx)">{{i}}</li>
 </ul>
 
 <hr>
