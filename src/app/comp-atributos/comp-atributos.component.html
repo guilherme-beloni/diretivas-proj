@@ -1,3 +1,20 @@
 <p [ngClass]="estilo">comp-atributos works!</p>
 <button (click)="trocar()">trocar</button>
 <h1 [ngStyle]="{'background': corFundo, 'color': corFonte}">CURSO ANGULAR</h1>
+
+
+
+<h2>Lista de Compras</h2>
+<p>Adicione um Item</p>
+<input type="text" [(ngModel)]='item'>
+
+<button (click)="adicionarLista()">Adicionar</button>
+<p>{{item}}</p>
+
+<ul>
+    <li *ngFor="let i of lista">{{i}}</li>
+</ul>
+
+<hr>
+
+<!--Fazer sozinho o esquema de remover da lista-->
