@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   produtos: string[] = []
-  menuType: string = "clever"; // Dependendo da permissão que eu der, vai rederizar os itens
+  menuType: string = "admin"; // Dependendo da permissão que eu der, vai rederizar os itens
 
 
 
